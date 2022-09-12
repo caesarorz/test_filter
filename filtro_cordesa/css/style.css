@@ -1,0 +1,191 @@
+.bg-container-gray {
+    background-color: #EFEFEF;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(245, 245, 245);
+  }
+
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myInput:focus {outline: 3px solid #ddd;}
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid white;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    margin: 10px 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border:1px solid #2D9CDB;
+    border-radius: 5px;
+    display: block;
+  }
+
+  /* .dropdown-content img {
+    border:1px solid #2D9CDB;
+  } */
+
+  .dropdown a:hover {background-color: #ddd;}
+
+  .show {display: block;}
+
+  .dropbtn_text_property {
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .dropbtn_text_custom {
+    font-size: 0.7em;
+  }
+
+  .dropbtn {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+
+.dropbtn_text_right {
+    margin: auto;
+    margin-right: 1px;
+}
+
+.dropdown_makinaria_menu {
+  position:relative;
+  background-color: #EFEFEF;
+  border: none;
+}
+
+#btn_buscar {
+    background-color: #5F5F5F;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20%;
+    width: 100px;
+}
+
+.card_marca {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+.feature_makinaria_p {
+  font-weight: 400;
+  opacity: 0.6;
+  font-size: 12px;
+  margin-bottom: 0%;
+}
+.feature_makinaria_text_p {
+  font-weight: 700;
+  opacity: 0.6;
+  font-size: 16px;
+  margin-bottom: 0%;
+}
+#feature_makinaria_btn {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  margin-top: 4%;
+  border-radius: 5px;
+}
+.btn_makinaria_filtrar {
+  color: white;
+  background-color: #5F5F5F;
+}
+.btn_makinaria_filtrar:hover {
+  color: white;
+  background-color: black;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 990px) {
+  .dropdown_makinaria_menu {
+    display: none;
+  }
+  .dropdown_filter_makinaria {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn_filter_makinaria {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  #dropdown_content_makinaria {
+    width: 267px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  #dropdown_content_makinaria li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  #dropdown_content_makinaria a:hover {background-color: #f1f1f1}
+
+  #btn_buscar_filter {
+    margin-top: 0%;
+    width: 100%;
+    background-color: #5F5F5F;
+    color: white;
+    border-radius: 5px;
+  }
+
+}

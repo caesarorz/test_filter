@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<h2>Search/Filter Dropdown</h2>
+<p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
+
+
+<div class="container-fluid bg-container-gray py-4">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+              <div class="navbar-collapse dropdown_makinaria_menu" id="navbarSupportedContent">
+
+                <div class="container container_makinaria">
+                    <div class="row row_makinaria">
+                        <div class="col-lg-1 col-md-1">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col_makinaria_filter">
+                            <div class="dropdown">
+                                <button id="filter_maquinaria_btn_marca" onclick="myFunctionMarca()" class="dropbtn">
+                                    <div class="dropbtn_text_left">
+                                        <p class="dropbtn_text_property dropbtn_text_custom">Marca</p>
+                                        <p id="dropbtn_text_marca" class="dropbtn_text_property">Todas las marcas</p>
+                                    </div>
+                                    <div class="dropbtn_text_right">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </div>
+                                </button>
+                                <div id="myDropdownMarca" class="dropdown-content makinaria_close">
+                                    <a class="btn makinaria_close">Todas las marcas</a>
+                                    <a class="btn makinaria_close"> <img class="dropdown_marca makinaria_close" src="img/MST_logo.svg" alt="MST"> </a>
+                                    <a class="btn makinaria_close"> <img class="dropdown_marca makinaria_close" src="img/ZOOMLION_logo.svg" alt="ZOOMLION"> </a>
+                                    <a class="btn makinaria_close"> <img class="dropdown_marca makinaria_close" src="img/BASAK_logo.svg" alt="Basak"> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col_makinaria_filter">
+                            <div class="dropdown">
+                                <button id="filter_maquinaria_btn_tipo" onclick="myFunctionTipo()" class="dropbtn">
+                                    <div class="dropbtn_text_left">
+                                        <p class="dropbtn_text_property dropbtn_text_custom">Tipo</p>
+                                        <p id="dropbtn_text_tipo" class="dropbtn_text_property">Todos los tipos</p>
+                                    </div>
+                                    <div class="dropbtn_text_right">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </div>
+                                </button>
+                                <div id="myDropdownTipo" class="dropdown-content">
+                                    <a class="btn">Todos los tipos</a>
+                                    <a class="btn">Excavadora</a>
+                                    <a class="btn">Retroexcavadora</a>
+                                    <a class="btn">Manipulador</a>
+                                    <a class="btn">Tractor</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col_makinaria_filter">
+                            <div class="dropdown">
+                                <button id="filter_maquinaria_btn_uso" onclick="myFunctionUso()" class="dropbtn">
+                                    <div class="dropbtn_text_left">
+                                        <p class="dropbtn_text_property dropbtn_text_custom">Uso</p>
+                                        <p id="dropbtn_text_uso" class="dropbtn_text_property">Todos los usos</p>
+                                    </div>
+                                    <div class="dropbtn_text_right">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </div>
+                                </button>
+                                <div id="myDropdownUso" class="dropdown-content">
+                                    <a class="btn">Todos los usos</a>
+                                    <a class="btn">Uso 1</a>
+                                    <a class="btn">Uso 2</a>
+                                    <a class="btn">Uso 3</a>
+                                    <a class="btn">Uso 4</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12 col_makinaria_filter">
+                            <button id="btn_buscar" class="btn">Buscar</button>
+                        </div>
+                        <div class="col-lg-1 col-md-1"></div>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="dropdown_filter_makinaria">
+                <!-- <button class="dropbtn">Dropdown</button> -->
+                <button id="dropbtn_filter_makinaria" class="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span id="btn_makinaria_filtrar_close" class="btn btn_makinaria_filtrar">Filtrar</span>
+                </button>
+                <div class="makinaria_close" id="dropdown_content_makinaria" style="display: none;">
+                    <li class="makinaria_close">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col_makinaria_filter makinaria_close">
+                            <div class="dropdown makinaria_close">
+                                <button id="filter_maquinaria_btn_marca" onclick="myFunctionMarcaMobile()" class="dropbtn makinaria_close">
+                                    <div class="dropbtn_text_left makinaria_close">
+                                        <p class="dropbtn_text_property dropbtn_text_custom makinaria_close">Marca</p>
+                                        <p id="dropbtn_text_marca_mobile" class="dropbtn_text_property makinaria_close">Todas las marcas</p>
+                                    </div>
+                                    <div class="dropbtn_text_right makinaria_close">
+                                        <i class="fa fa-caret-down makinaria_close" aria-hidden="true"></i>
+                                    </div>
+                                </button>
+                                <div id="myDropdownMarcaMobile" class="dropdown-content makinaria_close">
+                                    <a class="btn makinaria_close">Todas las marcas</a>
+                                    <a class="btn makinaria_close"> <img class="dropdown_marca makinaria_close" src="img/MST_logo.svg" alt="MST"> </a>
+                                    <a class="btn makinaria_close"> <img class="dropdown_marca makinaria_close" src="img/ZOOMLION_logo.svg" alt="ZOOMLION"> </a>
+                                    <a class="btn makinaria_close"> <img class="dropdown_marca makinaria_close" src="img/BASAK_logo.svg" alt="Basak"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="makinaria_close">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col_makinaria_filter makinaria_close">
+                            <div class="dropdown makinaria_close">
+                                <button id="filter_maquinaria_btn_tipo" onclick="myFunctionTipoMobile()" class="dropbtn makinaria_close">
+                                    <div class="dropbtn_text_left makinaria_close">
+                                        <p class="dropbtn_text_property dropbtn_text_custom makinaria_close">Tipo</p>
+                                        <p id="dropbtn_text_tipo_mobile" class="dropbtn_text_property makinaria_close">Todos los tipos</p>
+                                    </div>
+                                    <div class="dropbtn_text_right makinaria_close">
+                                        <i class="fa fa-caret-down makinaria_close" aria-hidden="true"></i>
+                                    </div>
+                                </button>
+                                <div id="myDropdownTipoMobile" class="dropdown-content makinaria_close">
+                                    <a class="btn makinaria_close">Todos los tipos</a>
+                                    <a class="btn makinaria_close">Excavadora</a>
+                                    <a class="btn makinaria_close">Retroexcavadora</a>
+                                    <a class="btn makinaria_close">Manipulador</a>
+                                    <a class="btn makinaria_close">Tractor</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="makinaria_close">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col_makinaria_filter makinaria_close">
+                            <div class="dropdown makinaria_close">
+                                <button id="filter_maquinaria_btn_uso" onclick="myFunctionUsoMobile()" class="dropbtn makinaria_close">
+                                    <div class="dropbtn_text_left makinaria_close">
+                                        <p class="dropbtn_text_property dropbtn_text_custom makinaria_close">Uso</p>
+                                        <p id="dropbtn_text_uso_mobile" class="dropbtn_text_property makinaria_close">Todos los usos</p>
+                                    </div>
+                                    <div class="dropbtn_text_right makinaria_close">
+                                        <i class="fa fa-caret-down makinaria_close" aria-hidden="true"></i>
+                                    </div>
+                                </button>
+                                <div id="myDropdownUsoMobile" class="dropdown-content makinaria_close">
+                                    <a class="btn makinaria_close">Todos los usos</a>
+                                    <a class="btn makinaria_close">Uso 1</a>
+                                    <a class="btn makinaria_close">Uso 2</a>
+                                    <a class="btn makinaria_close">Uso 3</a>
+                                    <a class="btn makinaria_close">Uso 4</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="makinaria_close">
+                        <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12 col_makinaria_filter makinaria_close">
+                            <button id="btn_buscar_filter" class="btn makinaria_close">Buscar</button>
+                        </div>
+                    </li>
+                </div>
+            </div>
+            </div>
+        </nav>
+</div>
+
+
+<div class="container py-5">
+    <section id="show_makinaria_filtered" class="row row-cols-1 row-cols-md-2 g-4">
+      <div id="show_makinaria_filtered_group" class="col-lg-4 col-md-4 col-sm-6 col-xs-2">
+        <div id="makinaria_1" class="card mx-auto">
+          <img id="makinaria_1_img" src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Busqueda de  Maquinaria</h5>
+            <p class="card-text card_marca">Para encontrar su producto escoja la marca, luego el tipo y el uso. Finalmente haga click en Buscar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</div>
+
+<script src="js/filterMaquinaria.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
